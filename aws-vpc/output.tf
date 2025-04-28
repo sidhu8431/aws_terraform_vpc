@@ -19,3 +19,6 @@ output "default" {
 output "main_routetable_info" {
   value = data.aws_route_table.default_rt
 }
+output "RDS_name" {
+value = aws_db_subnet_group.RDS.name
+}
