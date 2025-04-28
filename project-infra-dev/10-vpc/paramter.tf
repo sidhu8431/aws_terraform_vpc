@@ -26,8 +26,10 @@ resource "aws_ssm_parameter" "database_subnet" {
   value = join(",", module.vpc.DataBase_Subnet)
 }
 resource "aws_ssm_parameter" "database_subnet_group_name" {
-   name  = "/${var.project_name}/${var.env}/database_subnet_group_name"
+  name  = "/${var.project_name}/${var.env}/database_subnet_group_name"
   type  = "String"
-  value = module.vpc.RDS_name
+  value = module.vpc.aws_db_subnet_group_rds
 }
+
+
 

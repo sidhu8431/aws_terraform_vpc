@@ -19,3 +19,6 @@ output "default" {
 output "main_routetable_info" {
   value = module.vpc.main_routetable_info
 }
+output "RDS_name" {
+  value = module.vpc.aws_db_subnet_group_rds.RDS.name
+}
