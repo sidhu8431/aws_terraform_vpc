@@ -21,5 +21,5 @@ output "main_routetable_info" {
 }
 
 output "RDS_name" {
-  value = aws_db_subnet_group.RDS
+  value = aws_db_subnet_group.RDS.name
 }
