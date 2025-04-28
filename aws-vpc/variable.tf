@@ -140,6 +140,3 @@ variable "peering_tags" {
     compount = "vpc peering to default"
   }
 }
-variable "aws_db_subnet_group_rds_subnet" {
-    
-}
