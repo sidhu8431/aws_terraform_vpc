@@ -53,3 +53,6 @@ variable "common_tags" {
   }
 
 }
+# variable "aws_db_subnet_group_rds_subnet" {
+#   default = module.vpc.aws_subnet.database_subnet_cidr[*].id
+# }

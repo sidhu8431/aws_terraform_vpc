@@ -10,4 +10,5 @@ module "vpc" {
   database_subnet_cidr   = var.database_subnet_cidr
   env                    = var.env
   is_vpc_peering_request = var.is_vpc_peering_request
+  # aws_db_subnet_group_rds_subnet = var.aws_db_subnet_group_rds_subnet
 }
