@@ -28,8 +28,9 @@ resource "aws_ssm_parameter" "database_subnet" {
 resource "aws_ssm_parameter" "database_subnet_group_name" {
   name  = "/${var.project_name}/${var.env}/database_subnet_group_name"
   type  = "String"
-  value = module.vpc.RDS_name
+  value = module.vpc.database_subnet_group_name
 }
+
 
 
 

@@ -19,6 +19,16 @@ output "default" {
 output "main_routetable_info" {
   value = module.vpc.main_routetable_info
 }
+# output "RDS_name" {
+#   value = module.vpc.RDS_name
+# }
+
+# output "database_subnet_ids" {
+#   value = aws_subnet.database[*].id
+# }
+# output "RDS_name" {
+#   value = aws_db_subnet_group.RDS.name
+# }
 output "RDS_name" {
-  value = module.vpc.RDS_name
+  value = module.vpc.database_subnet_group_name
 }
